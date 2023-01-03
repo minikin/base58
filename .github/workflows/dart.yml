@@ -25,4 +25,4 @@ jobs:
         run: dart format --set-exit-if-changed lib test example
 
       - name: Analyze project source
-        run: dartanalyzer --fatal-infos --fatal-warnings lib test example
+        run: dart analyze --fatal-infos --fatal-warnings lib test example
