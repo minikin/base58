@@ -2,6 +2,20 @@
 
 <h1 align="center">Base58 encoding and decoding for Dart</h1>
 
+<p align="center">
+    <a href="https://github.com/minikin/base58/actions">
+    <img src="https://github.com/minikin/base58/actions/workflows/dart.yml/badge.svg" alt="CI Status" />
+  </a>
+    
+   <a href="https://github.com/minikin/base58/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Result Type is released under the MIT license." />
+  </a>
+
+  <a href="https://github.com/minikin/base58/blob/main/CODE_OF_CONDUCT.md">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  </a>
+</p>
+
 # Content
 
 - [Content](#content)
