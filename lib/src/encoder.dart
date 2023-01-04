@@ -1,13 +1,13 @@
 import 'alphabet.dart';
 
-class Encoder {
+mixin Encoder {
   static String encode(
     List<int> bin,
     Alphabet alphabet,
   ) {
     var size = bin.length;
-
     var zcount = 0;
+
     for (; zcount < size && bin[zcount] == 0;) {
       zcount++;
     }
@@ -15,11 +15,9 @@ class Encoder {
     size = (zcount + (size - zcount) * 555 ~/ 406 + 1);
 
     var out = List<int>.filled(size, 0);
-
     var i = 0;
-    var high = 0;
+    var high = size - 1;
 
-    high = size - 1;
     for (final b in bin) {
       i = size - 1;
       for (var carry = b; i > high || carry != 0; i--) {
@@ -29,6 +27,8 @@ class Encoder {
       }
       high = i;
     }
+
+    for (i = zcount; i < size && out[i] == 0; i++) {}
 
     final val = out.sublist(i - zcount);
     size = val.length;

@@ -3,7 +3,7 @@ import 'package:base58/src/constants.dart';
 import 'alphabet.dart';
 import 'base58_exception.dart';
 
-class Decoder {
+mixin Decoder {
   static List<int> decode(
     String str,
     Alphabet alphabet,
