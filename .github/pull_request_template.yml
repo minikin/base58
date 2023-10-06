@@ -1,0 +1,75 @@
+name: Pull Request
+description: Propose changes to the codebase.
+title: "fix/feat/refactor/chore/ci/docs]: "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the project! Please fill out this template to help us review your changes.
+
+  - type: input
+    id: issue
+    attributes:
+      label: Related Issue(s)
+      description: List the issue numbers related to this pull request (e.g., "Closes #123").
+      placeholder: e.g., Closes #123, Resolves #456  Fixes #367
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Changes
+      description: Provide a clear and concise description of what the pull request changes.
+      placeholder: Describe what you changed and why.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following checks.
+      options:
+        - label: I have tested my changes.
+        - label: My changes follow the project's coding style.
+        - label: I have updated the documentation accordingly.
+    validations:
+      required: true
+
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Provide links to screenshots showing the changes.
+      placeholder: URL of screenshots.
+    validations:
+      required: false
+
+  - type: textarea
+    id: breaking-changes
+    attributes:
+      label: Breaking Changes
+      description: Describe any breaking changes and the impact.
+      placeholder: Describe breaking changes.
+    validations:
+      required: false
+
+  - type: input
+    id: related-prs
+    attributes:
+      label: Related Pull Requests
+      description: List any related pull requests.
+      placeholder: e.g., #123, #456
+    validations:
+      required: false
+
+  - type: textarea
+    id: deployment
+    attributes:
+      label: Deployment Notes
+      description: Provide any necessary deployment instructions.
+      placeholder: Deployment instructions.
+    validations:
+      required: false
