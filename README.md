@@ -28,7 +28,7 @@
 
 ## Features
 
-> The Base58 is a group of binary-to-text encoding schemes used to represent large integers as alphanumeric text.
+> The Base58 is a group of binary-to-text encoding schemes that represent large integers as alphanumeric text.
 > It's designed for use in Bitcoin and is used in many other cryptocurrencies.
 
 - Encodes and decodes Base58.
